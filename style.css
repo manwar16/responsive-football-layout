@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  section {
+    margin-bottom: 50px;
+  }
+  /* FontAwesome   css */
+  .fa-arrow-right {
+    font-weight: 3px;
+    margin-left: 8px;
+  }
+  .fab {
+    background-color: white;
+    font-size: 20px;
+    padding: 0 14px;
+  }
+  .fab:hover{
+      cursor: pointer;
+  }
+  /* Bannner section area css */
+  .banner-section {
+    width: 100%;
+    height: 677px;
+    background: #2d25a0;
+    display: flex;
+    align-items: center;
+  }
+  .banner-section-area1 h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 156px;
+    margin-bottom: 27px;
+  }
+  .banner-section-area1 a {
+    color: white;
+    margin-left: 156px;
+    background: #e02c6d;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 2%;
+    font-weight: 700;
+  }
+  /* css animation for banner image*/
+  .banner-footballer {
+    transition: transform 0.1s;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .banner-footballer:hover {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1.5);
+    transform: scale(0.5);
+    cursor: pointer;
+  }
+   
+  .banner-section-area2 img {
+    width: 556px;
+    height: 438px;
+  }
+   
+  /* Player section css */
+  .players-area {
+    display: flex;
+    justify-content: center;
+  }
+   
+  .player-area-details {
+    width: 310px;
+    height: 474px;
+    margin: 10px 30px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  }
+   
+  .player-image img {
+    width: 310px;
+    height: 256px;
+  }
+  .player-name{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* footer section */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-img {
+    width: 480px;
+  }
+  footer p {
+    text-align: center;
+  }
+   
+  /* media queries */
+  @media only screen and (max-width: 688px) {
+    body {
+      width: 480px;
+      overflow-x: hidden !important;
+    }
+    .players-area {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-section {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      height: 920px;
+    }
+    .banner-section-area2 {
+      margin-top: 20px;
+    }
+    .banner-section-area2 img {
+      width: 100%;
+    }
+    .footer-section {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 400px;
+    }
+  }
+  @media only screen and (min-width: 689px) and (max-width: 992px) {
+    .players-area {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .banner-section {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      height: 900px;
+    }
+    .banner-section-area2 {
+      margin-top: 20px;
+    }
+    .banner-section-area2 img {
+      width: 100%;
+    }
+
+    .footer-section {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
